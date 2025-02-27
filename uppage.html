@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+ 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://a.mobirise.com/app/builder/images/logo5.png" type="image/x-icon">
+
+  
+  <meta name="description" content="Easily upload your question bank PDFs to our platform and enhance your educational resources. Join us in revolutionizing learning today!">
+  <title>Upload Question Bank</title>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1082830/assets/bootstrap/css/bootstrap.min.css?rnd=1736602232276">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1082830/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1736602232276">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1082830/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1736602232276">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1082830/assets/parallax/jarallax.css?rnd=1736602232276">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1082830/assets/smart-cart/minicart-theme.css?rnd=1736602232276">
+  
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1082830/assets/theme/css/style.css?rnd=1736602232276">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1082830/assets/css/mbr-additional.css?rnd=1736602232276" type="text/css">
+
+  <style>
+    .navbar-fixed-top {
+      top: auto;
+    }
+    #mobiriseBanner.container-banner {
+      height: 8rem;
+      opacity: 1;
+      -webkit-animation: 16s linear animationHeight;
+      -moz-animation: 16s linear animationHeight;
+      -o-animation: 16s linear animationHeight;
+      animation: 16s linear animationHeight;
+      transition: all 0.5s;
+    }
+    #mobiriseBanner.container-banner.container-banner-closing {
+      pointer-events: none;
+      height: 0;
+      opacity: 0;
+      -webkit-animation: 0.5s linear animationClosing;
+      -moz-animation: 0.5s linear animationClosing;
+      -o-animation: 0.5s linear animationClosing;
+      animation: 0.5s linear animationClosing;
+    }
+    #mobiriseBanner .banner {
+      min-height: 8rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      padding: 10px;
+      opacity: 1;
+      -webkit-animation: 16s linear animationBanner;
+      -moz-animation: 16s linear animationBanner;
+      -o-animation: 16s linear animationBanner;
+      animation: 16s linear animationBanner;
+      z-index: 1031;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #mobiriseBanner .banner p {
+      overflow: hidden;
+      display: -webkit-box;
+      line-clamp: 4;
+      -webkit-box-orient: vertical;
+      animation: none;
+      visibility: visible;
+    }
+    #mobiriseBanner .buy-license {
+      text-decoration: underline;
+    }
+    #mobiriseBanner .banner .btn {
+      margin: 0.3rem 0.5rem;
+      animation: none;
+      visibility: visible;
+    }
+    .navbar.opened {
+      z-index: 1032;
+    }
+    @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 94% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+    @-moz-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 94% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+    @-o-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 94% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+    @keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 94% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+    @-webkit-keyframes animationHeight { 0% { height: 0; } 94% { height: 0; } 100% { height: 8rem; } }
+    @-moz-keyframes animationHeight { 0% { height: 0; } 94% { height: 0; } 100% { height: 8rem; } }
+    @-o-keyframes animationHeight { 0% { height: 0; } 94% { height: 0; } 100% { height: 8rem; } }
+    @keyframes animationHeight { 0% { height: 0; } 94% { height: 0; } 100% { height: 8rem; } }
+
+    @-webkit-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    @-moz-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    @-o-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    @keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+
+    @media(max-width: 767px) {
+      #mobiriseBanner.container-banner {
+        height: 12rem;
+      }
+      #mobiriseBanner .banner {
+        min-height: 12rem;
+      }
+      @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 94% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+      @-moz-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 94% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+      @-o-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 94% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+      @keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 94% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+      @-webkit-keyframes animationHeight { 0% { height: 0; } 94% { height: 0; } 100% { height: 12rem; } }
+      @-moz-keyframes animationHeight { 0% { height: 0; } 94% { height: 0; } 100% { height: 12rem; } }
+      @-o-keyframes animationHeight { 0% { height: 0; } 94% { height: 0; } 100% { height: 12rem; } }
+      @keyframes animationHeight { 0% { height: 0; } 94% { height: 0; } 100% { height: 12rem; } }
+
+      @-webkit-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @-moz-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @-o-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    }
+  </style>
+</head>
+<body>
+  <section data-bs-version="5.1" class="header02 replym5 cid-uzz5Q3GriD mbr-fullscreen" id="hero-2-uzz5Q3GriD">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="content-wrapper">
+            <h1 class="mbr-section-title mbr-fonts-style display-2">Unleash Your Knowledge</h1>
+            <div class="text-wrapper">
+              <p class="mbr-text mbr-fonts-style display-4">Transform your question bank into a digital powerhouse! Upload your PDFs and let the magic happen. It's time to level up your learning game!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 card">
+          <div class="card-wrapper">
+            <div class="title-wrap">
+              <h4 class="card-title mbr-fonts-style display-4">Expert Guidance</h4>
+            </div>
+            <h4 class="card-text mbr-fonts-style display-4">Our team of educatios. Get ready to conquer your studies!</h4>
+            <div class="person-wrap">
+              <p class="card-name mbr-fonts-style display-4">Dr. Smarty</p>
+              <p class="card-role mbr-fonts-style display-4">Education Specialist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-wrap">
+      <img class="main-image" src="https://r.mobirisesite.com/1082830/assets/images/g80de6bacd362fa4c54b63cc33065-h_m5s1abb6.jpg" alt="">
+    </div>
+  </section>
+
+  <section data-bs-version="5.1" class="article03 replym5 cid-uzz5Q3GjJy mbr-parallax-background" id="call-to-action-1-uzz5Q3GjJy">
+    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(253, 239, 206);"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title-wrapper">
+            <h2 class="mbr-section-title mbr-fonts-style display-1">Join the Revolution</h2>
+            <div class="mbr-section-btn">
+              <form method="post" id="myForm" enctype="multipart/form-data">
+                <input type="file" name="pdfUpload" accept=".pdf" class="form-control mb-3" required>
+                <button type="submit" class="btn btn-sm btn-primary display-4">Upload PDF</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Your existing content here... -->
+  
+  <script src="https://r.mobirisesite.com/1082830/assets/web/assets/jquery/jquery.min.js?rnd=1736602232276"></script>
+  <script src="https://r.mobirisesite.com/1082830/assets/bootstrap/js/bootstrap.bundle.min.js?rnd=1736602232276"></script>
+  <script src="https://r.mobirisesite.com/1082830/assets/parallax/jarallax.js?rnd=1736602232276"></script>
+  <script src="https://r.mobirisesite.com/1082830/assets/smoothscroll/smooth-scroll.js?rnd=1736602232276"></script>
+  <script src="https://r.mobirisesite.com/1082830/assets/ytplayer/index.js?rnd=1736602232276"></script>
+  <script src="https://r.mobirisesite.com/1082830/assets/smart-cart/minicart.js?rnd=1736602232276"></script>
+  <script src="https://r.mobirisesite.com/1082830/assets/smart-cart/minicart-customizer.js?rnd=1736602232276"></script>
+  <script src="https://r.mobirisesite.com/1082830/assets/theme/js/script.js?rnd=1736602232276"></script>
+  
+<script>
+  document.getElementById('myForm').addEventListener('submit', async (event) => {
+    event.preventDefault(); // Prevent default form submission
+  
+    const formData = new FormData();
+    formData.append('pdfUpload', document.querySelector('input[name="pdfUpload"]').files[0]);
+    try {
+      const response = await fetch('http://localhost:3000/extract-pdf-text', {
+        method: 'POST',
+        body: formData
+      });
+  
+      if (!response.ok) {
+        const errorData = await response.json(); // Get JSON error
+        throw new Error(errorData.error + (errorData.details ? ": " + errorData.details : "")); // Display error message
+      }
+  
+      const blob = await response.blob(); // Get PDF blob
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'question_paper.pdf';
+      a.click();
+  
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred: " + error.message); // Display error to the user
+    }
+  });
+  
+</script>
+<!-- <form id="myForm" action="/extract-pdf-text" method="POST" enctype="multipart/form-data">
+</form> -->
+
+
+</body>
+</html>

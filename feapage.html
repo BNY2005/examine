@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Question Paper Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #d5c4419f, #ef8ced);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #6c63ff, #6a5bff);
+            color: rgb(235, 235, 229);
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(190, 21, 63, 0.348);
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #6c63ff;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        ul li, ol li {
+            margin-bottom: 0.8rem;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #ff6347;
+        }
+
+        /* Card Layout for Features */
+        .features {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            flex: 1 1 calc(33% - 1rem);
+            background: #f9f9ff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-card h3 {
+            color: #6c63ff;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+        }
+
+        .button {
+            display: inline-block;
+            background: #6c63ff;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.2s ease;
+            text-align: center;
+        }
+
+        .button:hover {
+            background: #5848d9;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #6c63ff;
+            color: white;
+            margin-top: 2rem;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+
+            .feature-card {
+                flex: 1 1 100%;
+            }
+
+            header {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Welcome to the Question Paper Generator
+</header>
+
+<div class="container">
+    <h2>About This Website</h2>
+    <p>This website is a powerful tool for automatically generating question papers for engineering colleges. It ensures a balanced question distribution from all units and aligns with Bloom's Taxonomy levels for higher-order thinking.</p>
+    
+    <h2>Key Features</h2>
+    <div class="features">
+        <div class="feature-card">
+            <h3>PART-A</h3>
+            <p>10 questions, each carrying 1 mark. Includes 2 questions from each unit.</p>
+        </div>
+        <div class="feature-card">
+            <h3>PART-B</h3>
+            <p>5 questions with internal choices, each carrying 10 marks. Covers all 5 units.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Bloom's Taxonomy</h3>
+            <p>Ensures coverage of all 6 levels: Remember, Understand, Apply, Analyze, Evaluate, and Create.</p>
+        </div>
+    </div>
+
+    <h2>How It Works</h2>
+    <ol>
+        <li>Upload the question bank for all 5 units.</li>
+        <li>Click the "Generate Question Paper" button to get a custom paper.</li>
+    </ol>
+
+    <h2>Benefits</h2>
+    <ul>
+        <li>Time-saving and efficient question paper preparation.</li>
+        <li>Fair and balanced question distribution.</li>
+        <li>Supports critical thinking through Bloom's Taxonomy alignment.</li>
+    </ul>
+
+    <h2>Ready to Start?</h2>
+    <p>Click the button below to generate your first question paper!</p>
+    <a href="http://127.0.0.1:5501/public/uppage.html" class="button">Generate Question Paper</a>
+</div>
+
+<footer>
+    &copy;  Question Paper Generator | All Rights Reserved
+</footer>
+
+</body>
+</html>
